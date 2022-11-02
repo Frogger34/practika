@@ -1,0 +1,36 @@
+#catalog .list-group-item {
+    transition: all 0.3s ease-in-out;
+}
+#catalog .list-group-item:hover {
+    background-color: #7ad7ff;
+}
+#productExamples {
+    border-radius: 10px;
+}
+#item p {
+    font-size: 18px;
+}
+.count {
+    background-color: transparent;
+    border: 0;
+}
+
+aside {
+    position: fixed;
+    height: 100vh;
+}
+
+aside .nav-item {
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+aside .nav-item:hover {
+    background-color: #5296f0;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-left: 280px;
+    }
+}
