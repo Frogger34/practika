@@ -45,7 +45,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #417cbf;">
             <div class="container">
-                <a class="navbar-brand" href="#">Copy Star</a>
+                <a class="navbar-brand" href="../admin/index.php">Copy Star</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,7 +55,7 @@
                             <a class="nav-link active" aria-current="page" href="../shop/about_us.php">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Каталог</a>
+                            <a class="nav-link active" aria-current="page" href="../admin/index.php">Каталог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../shop/find_us.php">Где нас найти?</a>
@@ -171,9 +171,9 @@
             </a>
 
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">О нас</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Каталог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Где нас найти?</a></li>
+                <li class="nav-item"><a href="shop/about_us.php" class="nav-link px-2 text-muted">О нас</a></li>
+                <li class="nav-item"><a href="../admin/index.php" class="nav-link px-2 text-muted">Каталог</a></li>
+                <li class="nav-item"><a href="shop/find_us.php" class="nav-link px-2 text-muted">Где нас найти?</a></li>
             </ul>
         </footer>
     </div>

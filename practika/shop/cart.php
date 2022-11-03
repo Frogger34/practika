@@ -43,7 +43,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #417cbf;">
             <div class="container">
-                <a class="navbar-brand" href="../index.php">Copy Star</a>
+                <a class="navbar-brand" href="../admin/index.php">Copy Star</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,13 +53,13 @@
                             <a class="nav-link active" aria-current="page" href="about_us.php">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.php">Каталог</a>
+                            <a class="nav-link active" aria-current="page" href="../admin/index.php">Каталог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="find_us.php">Где нас найти?</a>
                         </li>
                     </ul>
-                    <a href="../admin/panel_main.php" target="_blank" class="btn btn-success me-2 <?= $show_admin ?>">Панель админа</a>
+                    <a href="../admin/panel_main.php" target="_blank" class="btn btn-success me-2 <?= $show_opt_admin ?>">Панель админа</a>
                     <a href="cart.php" class="btn btn-primary me-2 <?= $show_opt ?>">Корзина</a>
                     <a href="my_orders.php" class="btn btn-primary me-2 <?= $show_opt ?>">Мои заказы</a>
                     <a href="../auth/logout.php" class="btn btn-outline-dark text-white <?= $show_opt || $show_admin ?>">Выход</a>
@@ -107,7 +107,7 @@
             <div class="row d-flex align-items-center mb-4 border rounded p-2 m-sm-0 m-2">
                 <div class="col-xl-1 col-md-1 col-sm-1 col-1 text-center">1</div>
                 <div class="col-xl-2 col-md-2 d-md-block d-none text-center">
-                    <img src="img/printer1.webp" height="80">
+                    <img src="../img/printer1.webp" height="80">
                 </div>
                 <div class="col-xl-3 col-md-3 col-sm-3 col-3 text-center">
                     <strong class="d-flex align-items-center justify-content-center flex-column mb-3" style="font-size: 13px;">NEWART GC-20<span class="d-flex badge bg-danger ms-2">Бельгия</span></strong>
@@ -131,31 +131,7 @@
             <div class="row d-flex align-items-center mb-4 border rounded p-2 m-sm-0 m-2">
                 <div class="col-xl-1 col-md-1 col-sm-1 col-1 text-center">1</div>
                 <div class="col-xl-2 col-md-2 d-md-block d-none text-center">
-                    <img src="img/printer1.webp" height="80">
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-3 col-3 text-center">
-                    <strong class="d-flex align-items-center justify-content-center flex-column mb-3" style="font-size: 13px;">NEWART GC-20<span class="d-flex badge bg-danger ms-2">Бельгия</span></strong>
-                </div>
-                <div class="col-xl-1 col-md-2 col-sm-2 col-3 text-center p-lg-1 pe-md-4">
-                    <button type="button" class="count">+</button>
-                    <strong id="count">1</strong>
-                    <button type="button" class="count ps-md-2">-</button>
-                </div>
-                <div class="col-xl-2 col-md-1 col-sm-2 col-2 text-center">
-                    5000 руб.
-                </div>
-                <div class="col-xl-2 col-md-1 col-sm-2 col-2 text-center">
-                    <strong>5000 руб.</strong> 
-                </div>
-                <div class="col-xl-1 col-md-2 col-sm-2 col-12 text-center align-items-center mt-sm-0 mt-2">
-                    <button type="button" class="btn btn-danger btn-small btn-sm">Удалить</button>
-                </div>
-            </div>
-
-            <div class="row d-flex align-items-center mb-4 border rounded p-2 m-sm-0 m-2">
-                <div class="col-xl-1 col-md-1 col-sm-1 col-1 text-center">1</div>
-                <div class="col-xl-2 col-md-2 d-md-block d-none text-center">
-                    <img src="img/printer1.webp" height="80">
+                    <img src="../img/MFP1.webp" height="80">
                 </div>
                 <div class="col-xl-3 col-md-3 col-sm-3 col-3 text-center">
                     <strong class="d-flex align-items-center justify-content-center flex-column mb-3" style="font-size: 13px;">NEWART GC-20<span class="d-flex badge bg-danger ms-2">Бельгия</span></strong>
@@ -184,7 +160,7 @@
             </div>
             <div class="row">
                 <div class="col-12 text-end mt-3">
-                    <a href="order.html" id="order" class="btn btn-outline-primary text-black">Оформить заказ</a>
+                    <a href="order.php" id="order" class="btn btn-outline-primary text-black">Оформить заказ</a>
                 </div>
             </div>
         </div>
@@ -203,9 +179,9 @@
             </a>
 
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">О нас</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Каталог</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Где нас найти?</a></li>
+                <li class="nav-item"><a href="shop/about_us.php" class="nav-link px-2 text-muted">О нас</a></li>
+                <li class="nav-item"><a href="../admin/index.php" class="nav-link px-2 text-muted">Каталог</a></li>
+                <li class="nav-item"><a href="shop/find_us.php" class="nav-link px-2 text-muted">Где нас найти?</a></li>
             </ul>
         </footer>
     </div>
